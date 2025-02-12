@@ -39,7 +39,13 @@ that you've understood the concept. Add your answer to this markdown file.
 
 ##Complexity of the Reverse Insertion Sort
 
-See i know it's $T(n) \in \theta(n^2)$ buts it's really late right now so ill do the actual analysis/reasoning later
+The complexity of the Reverse Insertion Sort ends up being $T(n) \in \theta(n^2)$  
+This is because the best case complexity of insertion sort (reversed or not) is linear, or n.  
+In the worst case, the complexity is n^2 due to having to go over every element as many times as there are elements.  
+In the average case, roughly half of a given array is sorted, which is linear (n). Then the sort will have to look over every element half as many times as there are elements in the array.  
+Mathematically, this ends up becoming $n * \frac{n}{2}$  which becomes $\frac{n^2}{2}$  
+$\frac{1}{2}$ is just a constant and has no bearing on the asymptotic complexity, so the final average-case complexity of the reverse insertion sort ends up being:  
+$T(n) \in \theta(n^2)$
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
 
